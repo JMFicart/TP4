@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:client
+    username: user
+    password: pswd
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2
+
