@@ -1,0 +1,34 @@
+.entete {
+    display: flex;
+    /* flex-direction: row; */
+    /* align-content: space-between; */
+    background-color: darkblue;
+    color: white;
+    font-size: 5pc;
+}
+
+.classnav {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    font-size: 2pc;
+    align-items: flex-end;
+}
+
+.box {
+    display: flex;
+}
+
+.one {
+    flex: 1 1 auto;
+}
+
+.two {
+    flex: 1 1 auto;
+}
+
+.three {
+    flex: 1 1 auto;
+    font-size: 2pc;
+    align-items: flex-end;
+}
