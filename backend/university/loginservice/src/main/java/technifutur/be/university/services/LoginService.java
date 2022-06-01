@@ -61,7 +61,7 @@ public class LoginService {
         Login login = Login.builder()
                 .cancelled(true)
                 .build();
-        cRepo.save(login);
+        login = cRepo.save(login);
         return login;
     }
 }
