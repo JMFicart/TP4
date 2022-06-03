@@ -3,8 +3,6 @@ package technifutur.be.university.models;
 import lombok.Builder;
 import lombok.Data;
 
-import javax.persistence.Column;
-
 @Data
 @Builder
 public class LoginDto {
