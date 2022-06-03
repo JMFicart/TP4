@@ -17,6 +17,7 @@
 
 .box {
     display: flex;
+    justify-content: space-between;
 }
 
 .one {
@@ -24,11 +25,17 @@
 }
 
 .two {
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
 }
 
 .three {
     flex: 1 1 auto;
     font-size: 2pc;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    text-align : right;
+    color: white;
 }
+
+a:link { color: white; }
+a:visited {color: yellow; }
+a:hover { color: plum; }
