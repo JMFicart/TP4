@@ -1,6 +1,9 @@
+server:
+  port: 8081
+
 spring:
   datasource:
-    url: jdbc:h2:mem:client
+    url: jdbc:h2:mem:login
     username: user
     password: pswd
   jpa:
@@ -9,4 +12,12 @@ spring:
     console:
       enabled: true
       path: /h2
-
+  application:
+    name: admin-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        instance-id: ${spring.application.name}:${random.uuid}

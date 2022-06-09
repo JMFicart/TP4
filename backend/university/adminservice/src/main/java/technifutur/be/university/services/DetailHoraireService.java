@@ -3,12 +3,10 @@ package technifutur.be.university.services;
 import org.springframework.stereotype.Service;
 import technifutur.be.university.exceptions.ElementNotFoundException;
 import technifutur.be.university.mappers.DetailHoraireMapper;
-import technifutur.be.university.models.*;
+import technifutur.be.university.models.DetailHoraire;
+import technifutur.be.university.models.DetailHoraireDto;
+import technifutur.be.university.models.DetailHoraireForm;
 import technifutur.be.university.repositories.DetailHoraireRepository;
-
-import javax.validation.constraints.NotBlank;
-import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.List;
 
 @Service
@@ -47,28 +45,23 @@ public class DetailHoraireService {
 
     public DetailHoraire update(DetailHoraireForm form){
         DetailHoraire detailhoraire = DetailHoraire.builder()
-                .NomPersonne(form.getNomPersonne())
-                .PrenomPersonne(form.getPrenomPersonne())
-                .AdressePersonne(form.getAdressePersonne())
-                .NoRuePersonne(form.getNoRuePersonne())
-                .LocalitePersonne(form.getLocalitePersonne())
-                .CodePostalPersonne(form.getCodePostalPersonne())
-                .TelephonePersonne(form.getTelephonePersonne())
-                .EmailPersonne(form.getEmailPersonne())
-                .DateIn(form.getDateIn())
-                .TypePersonne("P")
-                .Id_Horaire(form.getId_Horaire())
-                .Id_Login(form.getId_Login())
+                .IdHoraire(form.getIdHoraire())
+                .DateJour(form.getDateJour())
+                .HeureDebut(form.getHeureDebut())
+                .HeureFin(form.getHeureFin())
+                .IdCours(form.getIdCours())
+                .IdProfesseur(form.getIdProfesseur())
+                .IdClasse(form.getIdClasse())
                 .build();
         detailhoraire = dhRepo.save(detailhoraire);
         return detailhoraire;
     }
 
-    public DetailHoraire delete(DetailHoraireForm form){
-        DetailHoraire detailhoraire = DetailHoraire.builder()
-                .DateOut(LocalDate.now())
-                .build();
-        detailhoraire = dhRepo.save(detailhoraire);
-        return detailhoraire;
-    }
+//    public DetailHoraire delete(DetailHoraireForm form){
+//        DetailHoraire detailhoraire = DetailHoraire.builder()
+//                .DateOut(LocalDate.now())
+//                .build();
+//        detailhoraire = dhRepo.save(detailhoraire);
+//        return detailhoraire;
+//    }
 }
