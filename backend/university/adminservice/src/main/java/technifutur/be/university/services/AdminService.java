@@ -7,7 +7,6 @@ import technifutur.be.university.models.Admin;
 import technifutur.be.university.models.AdminDto;
 import technifutur.be.university.models.AdminForm;
 import technifutur.be.university.repositories.AdminRepository;
-
 import java.time.LocalDate;
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class AdminService {
     }
 
     public Admin insert(AdminForm form){
-        Admin professeur = Admin.builder()
+        Admin administratif = Admin.builder()
                 .idPersonne(++nextIdAdmin)
                 .NomPersonne(form.getNomPersonne())
                 .PrenomPersonne(form.getPrenomPersonne())
@@ -46,12 +45,12 @@ public class AdminService {
                 .Id_Horaire(form.getId_Horaire())
                 .Id_Login(form.getId_Login())
                 .build();
-        cRepo.save(professeur);
-        return professeur;
+        cRepo.save(administratif);
+        return administratif;
     }
 
     public Admin update(AdminForm form){
-        Admin professeur = Admin.builder()
+        Admin administratif = Admin.builder()
                 .NomPersonne(form.getNomPersonne())
                 .PrenomPersonne(form.getPrenomPersonne())
                 .AdressePersonne(form.getAdressePersonne())
@@ -65,15 +64,15 @@ public class AdminService {
                 .Id_Horaire(form.getId_Horaire())
                 .Id_Login(form.getId_Login())
                 .build();
-        professeur = cRepo.save(professeur);
-        return professeur;
+        administratif = cRepo.save(administratif);
+        return administratif;
     }
 
     public Admin delete(AdminForm form){
-        Admin professeur = Admin.builder()
+        Admin administratif = Admin.builder()
                 .DateOut(LocalDate.now())
                 .build();
-        professeur = cRepo.save(professeur);
-        return professeur;
+        administratif = cRepo.save(administratif);
+        return administratif;
     }
 }

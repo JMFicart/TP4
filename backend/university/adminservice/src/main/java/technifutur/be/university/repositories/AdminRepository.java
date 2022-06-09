@@ -5,6 +5,6 @@ import technifutur.be.university.models.Admin;
 
 import java.util.Optional;
 
-public interface AdminRepository   extends JpaRepository<Admin, Long> {
+public interface AdminRepository  extends JpaRepository<Admin, Long> {
     Optional<Admin> findById(Long id);
 }
