@@ -1,10 +1,8 @@
 package technifutur.be.university.mappers;
 
 import org.springframework.stereotype.Service;
-import technifutur.be.university.models.DemandeInscription;
-import technifutur.be.university.models.DemandeInscriptionDto;
-
-import java.time.LocalDate;
+import technifutur.be.university.models.inscriptions.DemandeInscription;
+import technifutur.be.university.models.inscriptions.DemandeInscriptionDto;
 
 @Service
 public class DemandeInscriptionMapper {

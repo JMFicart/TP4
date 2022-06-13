@@ -1,4 +1,4 @@
-package technifutur.be.university.models;
+package technifutur.be.university.models.horaire;
 
 import lombok.*;
 import javax.persistence.Column;

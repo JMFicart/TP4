@@ -1,4 +1,4 @@
-package technifutur.be.university.models;
+package technifutur.be.university.models.detailhoraire;
 
 import lombok.Data;
 import javax.validation.constraints.NotBlank;

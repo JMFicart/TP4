@@ -3,9 +3,9 @@ package technifutur.be.university.services;
 import org.springframework.stereotype.Service;
 import technifutur.be.university.exceptions.ElementNotFoundException;
 import technifutur.be.university.mappers.DetailHoraireMapper;
-import technifutur.be.university.models.DetailHoraire;
-import technifutur.be.university.models.DetailHoraireDto;
-import technifutur.be.university.models.DetailHoraireForm;
+import technifutur.be.university.models.detailhoraire.DetailHoraire;
+import technifutur.be.university.models.detailhoraire.DetailHoraireDto;
+import technifutur.be.university.models.detailhoraire.DetailHoraireForm;
 import technifutur.be.university.repositories.DetailHoraireRepository;
 import java.util.List;
 

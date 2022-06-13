@@ -1,8 +1,8 @@
 package technifutur.be.university.mappers;
 
 import org.springframework.stereotype.Service;
-import technifutur.be.university.models.Admin;
-import technifutur.be.university.models.AdminDto;
+import technifutur.be.university.models.admin.Admin;
+import technifutur.be.university.models.admin.AdminDto;
 
 @Service
 public class AdminMapper {

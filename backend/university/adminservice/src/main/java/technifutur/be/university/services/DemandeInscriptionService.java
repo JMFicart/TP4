@@ -3,9 +3,9 @@ package technifutur.be.university.services;
 import org.springframework.stereotype.Service;
 import technifutur.be.university.exceptions.ElementNotFoundException;
 import technifutur.be.university.mappers.DemandeInscriptionMapper;
-import technifutur.be.university.models.DemandeInscription;
-import technifutur.be.university.models.DemandeInscriptionDto;
-import technifutur.be.university.models.DemandeInscriptionForm;
+import technifutur.be.university.models.inscriptions.DemandeInscription;
+import technifutur.be.university.models.inscriptions.DemandeInscriptionDto;
+import technifutur.be.university.models.inscriptions.DemandeInscriptionForm;
 import technifutur.be.university.repositories.DemandeInscriptionRepository;
 import java.util.List;
 

@@ -1,8 +1,8 @@
 package technifutur.be.university.mappers;
 
 import org.springframework.stereotype.Service;
-import technifutur.be.university.models.Horaire;
-import technifutur.be.university.models.HoraireDto;
+import technifutur.be.university.models.horaire.Horaire;
+import technifutur.be.university.models.horaire.HoraireDto;
 
 @Service
 public class HoraireMapper {

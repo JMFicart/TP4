@@ -1,8 +1,8 @@
 package technifutur.be.university.mappers;
 
 import org.springframework.stereotype.Service;
-import technifutur.be.university.models.Cours;
-import technifutur.be.university.models.CoursDto;
+import technifutur.be.university.models.cours.Cours;
+import technifutur.be.university.models.cours.CoursDto;
 
 @Service
 public class CoursMapper {

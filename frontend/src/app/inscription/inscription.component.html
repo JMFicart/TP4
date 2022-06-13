@@ -2,19 +2,41 @@
     <h2>Formulaire d'inscription</h2>
 
     <div class="mb-3">
-        <label for="input-nom" class="form-label">Nom</label>
+        <label for="input-nompersonne" class="form-label">Nom</label>
         <input type="text" id = "input-nompersonne" class="form-control" th:field="*{nompersonne}">
     </div>
-
-    <p>Nom : </p><input type="text" id="nompersonne" formControlName="nompersonne"><br>
-    <p>Prénom : </p><input type="text" id="prenompersonne" formControlName="prenompersonne"><br>
-    <p>Adresse : </p><input type="text" id="adressepersonne" formControlName="adressepersonne"><br>
-    <p>N° : </p><input type="text" id="noruepersonne" formControlName="noruepersonne"><br>
-    <p>Code postal : </p><input type="text" id="codepostalpersonne" formControlName="codepostalpersonne"><br>
-    <p>Localité : </p><input type="text" id="localitepersonne" formControlName="localitepersonne"><br>
-    <p>Télépone : </p><input type="text" id="telephonepersonne" formControlName="telephonepersonne"><br>
-    <p>Email : </p><input type="text" id="emailpersonne" formControlName="emailpersonne"><br>
-    <p>Horaire : </p><input type="text" id="idhoraire" formControlName="idhoraire"><br>
+    <div class="mb-3">
+        <label for="input-prenompersonne" class="form-label">Prénom</label>
+        <input type="text" id = "input-prenompersonne" class="form-control" th:field="*{prenompersonne}">
+    </div>
+    <div class="mb-3">
+        <label for="input-adressepersonne" class="form-label">Adresse</label>
+        <input type="text" id = "input-adressepersonne" class="form-control" th:field="*{adressepersonne}">
+    </div>
+    <div class="mb-3">
+        <label for="input-nom" class="form-label">Nom</label>
+        <p>N° : </p><input type="text" id="noruepersonne" formControlName="noruepersonne"><br>
+    </div>
+    <div class="mb-3">
+        <label for="input-nom" class="form-label">Nom</label>
+        <p>Code postal : </p><input type="text" id="codepostalpersonne" formControlName="codepostalpersonne"><br>
+    </div>
+    <div class="mb-3">
+        <label for="input-nom" class="form-label">Nom</label>
+        <p>Localité : </p><input type="text" id="localitepersonne" formControlName="localitepersonne"><br>
+    </div>
+    <div class="mb-3">
+        <label for="input-nom" class="form-label">Nom</label>
+        <p>Télépone : </p><input type="text" id="telephonepersonne" formControlName="telephonepersonne"><br>
+    </div>
+    <div class="mb-3">
+        <label for="input-nom" class="form-label">Nom</label>
+        <p>Email : </p><input type="text" id="emailpersonne" formControlName="emailpersonne"><br>
+    </div>
+    <div class="mb-3">
+        <label for="input-nom" class="form-label">Nom</label>
+        <p>Horaire : </p><input type="text" id="idhoraire" formControlName="idhoraire"><br>
+    </div>
     <br>
     <button type="button" (click)="onSubmit()">Sign in</button>
 </div>

@@ -24,10 +24,6 @@
     flex: 1 1 auto;
 }
 
-.two {
-    /* flex: 1 1 auto; */
-}
-
 .three {
     flex: 1 1 auto;
     font-size: 2pc;
@@ -39,3 +35,7 @@
 a:link { color: white; }
 a:visited {color: yellow; }
 a:hover { color: plum; }
+
+body {
+    background-color: lightgray;
+}

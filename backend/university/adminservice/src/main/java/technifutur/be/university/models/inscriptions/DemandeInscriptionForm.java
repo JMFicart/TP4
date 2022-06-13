@@ -1,4 +1,4 @@
-package technifutur.be.university.models;
+package technifutur.be.university.models.inscriptions;
 
 import lombok.Data;
 

@@ -1,7 +1,7 @@
 package technifutur.be.university.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import technifutur.be.university.models.Admin;
+import technifutur.be.university.models.admin.Admin;
 
 import java.util.Optional;
 

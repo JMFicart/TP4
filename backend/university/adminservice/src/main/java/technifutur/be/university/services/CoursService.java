@@ -3,9 +3,9 @@ package technifutur.be.university.services;
 import org.springframework.stereotype.Service;
 import technifutur.be.university.exceptions.ElementNotFoundException;
 import technifutur.be.university.mappers.CoursMapper;
-import technifutur.be.university.models.Cours;
-import technifutur.be.university.models.CoursDto;
-import technifutur.be.university.models.CoursForm;
+import technifutur.be.university.models.cours.Cours;
+import technifutur.be.university.models.cours.CoursDto;
+import technifutur.be.university.models.cours.CoursForm;
 import technifutur.be.university.repositories.CoursRepository;
 import java.util.List;
 

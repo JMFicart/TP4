@@ -2,10 +2,10 @@ package technifutur.be.university.utils;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
-import technifutur.be.university.models.Admin;
-import technifutur.be.university.models.DemandeInscription;
-import technifutur.be.university.models.DetailHoraire;
-import technifutur.be.university.models.Horaire;
+import technifutur.be.university.models.admin.Admin;
+import technifutur.be.university.models.inscriptions.DemandeInscription;
+import technifutur.be.university.models.detailhoraire.DetailHoraire;
+import technifutur.be.university.models.horaire.Horaire;
 import technifutur.be.university.repositories.AdminRepository;
 import technifutur.be.university.repositories.DemandeInscriptionRepository;
 import technifutur.be.university.repositories.DetailHoraireRepository;

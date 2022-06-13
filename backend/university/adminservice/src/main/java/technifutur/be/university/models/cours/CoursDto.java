@@ -1,4 +1,4 @@
-package technifutur.be.university.models;
+package technifutur.be.university.models.cours;
 
 import lombok.Builder;
 import lombok.Data;
