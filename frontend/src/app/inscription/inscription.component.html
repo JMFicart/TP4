@@ -2,40 +2,40 @@
     <h2>Formulaire d'inscription</h2>
 
     <div class="mb-3">
-        <label for="input-nompersonne" class="form-label">Nom</label>
+        <label for="input-nompersonne" class="form-label">Nom : </label>
         <input type="text" id = "input-nompersonne" class="form-control" th:field="*{nompersonne}">
     </div>
     <div class="mb-3">
-        <label for="input-prenompersonne" class="form-label">Prénom</label>
+        <label for="input-prenompersonne" class="form-label">Prénom : </label>
         <input type="text" id = "input-prenompersonne" class="form-control" th:field="*{prenompersonne}">
     </div>
     <div class="mb-3">
-        <label for="input-adressepersonne" class="form-label">Adresse</label>
+        <label for="input-adressepersonne" class="form-label">Adresse : </label>
         <input type="text" id = "input-adressepersonne" class="form-control" th:field="*{adressepersonne}">
     </div>
     <div class="mb-3">
-        <label for="input-nom" class="form-label">Nom</label>
-        <p>N° : </p><input type="text" id="noruepersonne" formControlName="noruepersonne"><br>
+        <label for="input-noruepersonne" class="form-label">N° : </label>
+        <input type="text" id = "input-noruepersonne" class="form-control" th:field="*{noruepersonne}">
     </div>
     <div class="mb-3">
-        <label for="input-nom" class="form-label">Nom</label>
-        <p>Code postal : </p><input type="text" id="codepostalpersonne" formControlName="codepostalpersonne"><br>
+        <label for="input-codepostalpersonne" class="form-label">Code postal : </label>
+        <input type="text" id = "input-codepostalpersonne" class="form-control" th:field="*{codepostalpersonne}">
     </div>
     <div class="mb-3">
-        <label for="input-nom" class="form-label">Nom</label>
-        <p>Localité : </p><input type="text" id="localitepersonne" formControlName="localitepersonne"><br>
+        <label for="input-localitepersonne" class="form-label">Localité : </label>
+        <input type="text" id = "input-localitepersonne" class="form-control" th:field="*{localitepersonne}">
     </div>
     <div class="mb-3">
-        <label for="input-nom" class="form-label">Nom</label>
-        <p>Télépone : </p><input type="text" id="telephonepersonne" formControlName="telephonepersonne"><br>
+        <label for="input-telephonepersonne" class="form-label">Téléphone : </label>
+        <input type="text" id = "input-telephonepersonne" class="form-control" th:field="*{telephonepersonne}">
     </div>
     <div class="mb-3">
-        <label for="input-nom" class="form-label">Nom</label>
-        <p>Email : </p><input type="text" id="emailpersonne" formControlName="emailpersonne"><br>
+        <label for="input-emailpersonne" class="form-label">Email : </label>
+        <input type="text" id = "input-emailpersonne" class="form-control" th:field="*{emailpersonne}">
     </div>
     <div class="mb-3">
-        <label for="input-nom" class="form-label">Nom</label>
-        <p>Horaire : </p><input type="text" id="idhoraire" formControlName="idhoraire"><br>
+        <label for="input-horaire" class="form-label">Horaire : </label>
+        <input type="text" id = "input-horaire" class="form-control" th:field="*{horaire}">
     </div>
     <br>
     <button type="button" (click)="onSubmit()">Sign in</button>
