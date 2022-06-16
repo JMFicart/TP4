@@ -36,6 +36,11 @@ a:link { color: white; }
 a:visited {color: yellow; }
 a:hover { color: plum; }
 
+header {
+    background-color: darkblue;
+}
+
 body {
     background-color: lightgray;
 }
+

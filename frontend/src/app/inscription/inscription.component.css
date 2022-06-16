@@ -1,7 +1,17 @@
-body {
-    background-color:  lightgray;
+h2 {
+    background-color: lightgrey;
 }
 
-.mb-3 {
-    background-color: aquamarine;
+.inscription{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: .5rem;
+}
+
+.preference {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: .5rem;
 }

@@ -1,42 +1,26 @@
-<div>
-    <h2>Formulaire d'inscription</h2>
+<h2>Formulaire d'inscription</h2>
 
-    <div class="mb-3">
-        <label for="input-nompersonne" class="form-label">Nom : </label>
-        <input type="text" id = "input-nompersonne" class="form-control" th:field="*{nompersonne}">
-    </div>
-    <div class="mb-3">
-        <label for="input-prenompersonne" class="form-label">Prénom : </label>
-        <input type="text" id = "input-prenompersonne" class="form-control" th:field="*{prenompersonne}">
-    </div>
-    <div class="mb-3">
-        <label for="input-adressepersonne" class="form-label">Adresse : </label>
-        <input type="text" id = "input-adressepersonne" class="form-control" th:field="*{adressepersonne}">
-    </div>
-    <div class="mb-3">
-        <label for="input-noruepersonne" class="form-label">N° : </label>
-        <input type="text" id = "input-noruepersonne" class="form-control" th:field="*{noruepersonne}">
-    </div>
-    <div class="mb-3">
-        <label for="input-codepostalpersonne" class="form-label">Code postal : </label>
-        <input type="text" id = "input-codepostalpersonne" class="form-control" th:field="*{codepostalpersonne}">
-    </div>
-    <div class="mb-3">
-        <label for="input-localitepersonne" class="form-label">Localité : </label>
-        <input type="text" id = "input-localitepersonne" class="form-control" th:field="*{localitepersonne}">
-    </div>
-    <div class="mb-3">
-        <label for="input-telephonepersonne" class="form-label">Téléphone : </label>
-        <input type="text" id = "input-telephonepersonne" class="form-control" th:field="*{telephonepersonne}">
-    </div>
-    <div class="mb-3">
-        <label for="input-emailpersonne" class="form-label">Email : </label>
-        <input type="text" id = "input-emailpersonne" class="form-control" th:field="*{emailpersonne}">
-    </div>
-    <div class="mb-3">
-        <label for="input-horaire" class="form-label">Horaire : </label>
-        <input type="text" id = "input-horaire" class="form-control" th:field="*{horaire}">
-    </div>
-    <br>
-    <button type="button" (click)="onSubmit()">Sign in</button>
+<div>
+    <!-- <label for="input-nompersonne">Nom : </label>
+    <input type="text" id = "input-nompersonne" th:field="*{nompersonne}"> -->
+
+    <label for="input-nompersonne" size="40">Nom : </label>
+    <input type="text" name="input-nompersonne" id="input-nompersonne">
 </div>
+<div>
+    <label for="name" size="40">Name (4 to 8 characters):</label>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+</div>
+<br>
+<button type="button" (click)="onSubmit()">Sign in</button>
+
+<div class="preference">
+    <label for="cheese">Do you like cheese?</label>
+    <input type="checkbox" name="cheese" id="cheese">
+</div>
+
+<div class="preference">
+    <label for="peas">Do you like peas?</label>
+    <input type="checkbox" name="peas" id="peas">
+</div>
+
